@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesaplar</title>
+</head>
+<body>
+    <h1>Hesaplar</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Hesap Kodu</th>
+            <th>Hesap Adı</th>
+            <th>Tipi</th>
+            <th>Borç</th>
+            <th>Alacak</th>
+        </tr>
+        <% hesaplar.forEach(hesap => { %>
+        <tr>
+            <td><%= hesap.id %></td>
+            <td><%= hesap.hesap_kodu %></td>
+            <td><%= hesap.hesap_adi %></td>
+            <td><%= hesap.tipi %></td>
+            <td><%= hesap.borc %></td>
+            <td><%= hesap.alacak %></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
